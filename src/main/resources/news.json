@@ -1,14 +1,17 @@
 {
-    "1": {
+    "sucess" : "true",
+    "news": [
+    {
             "headLine": "Lalit Modi Elected Rajasthan Cricket Chief",
             "readMoreLink": "http://sports.ndtv.com/cricket/news/223857-lalit-modi-elected-rajasthan-president-bcci-suspends-defiant-state-association"
-        }
-    "2": {
+        },
+     {
             "headLine": "Dhoni can lead India for three-four years - Fleming",
             "readMoreLink": "http://www.espncricinfo.com/india/content/story/741507.html"
-          }
-    "3": {
+          },
+     {
             "headLine": "IPL 7: Bowlers keep SRH in the hunt",
             "readMoreLink": "http://indianexpress.com/article/sports/cricket/ipl-7-live-cricket-score-rr-vs-srh-rr-look-to-sustain-momentum-against-srh/"
           }
+    ]
 }

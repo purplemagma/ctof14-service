@@ -1,14 +1,25 @@
 {
-    "1": {
+    "deals": [
+        {
             "vendor": "Olive Garden",
-            "offer": "Buy 2 entrees get a 3rd one free"
-        }
-    "2": {
+            "offer": "Buy 2 entrees get a 3rd one free",
+            "couponCode" : "twoforone",
+            "link" : "http://olivegarden.com?offerId=twoforone"
+        },
+        {
             "vendor": "Macy's",
-            "offer": "25% off our new summer clothing line"
-          }
-    "3": {
+            "offer": "25% off our new summer clothing line",
+            "couponCode" : "summer25",
+            "link" : "http://macys.com?offerId=summer25"
+
+        },
+        {
             "vendor": "TicketMaster",
-            "offer": "$40 for 2 tickets to Country Music Fest!"
-          }
+            "offer": "$40 for 2 tickets to Country Music Fest!",
+            "couponCode" : "country2for40",
+            "link" : "http://ticketmaster.com?offerId=country2for40"
+
+        }
+    ],
+    "success": "true"
 }

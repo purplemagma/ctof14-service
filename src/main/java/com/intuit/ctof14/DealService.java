@@ -1,6 +1,7 @@
 package com.intuit.ctof14;
 
 import org.apache.commons.io.IOUtils;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.intuit.ctof14.ReviewService;
@@ -20,24 +21,23 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("v1/deal")
-@Api(value="v1/deal", description="Deal API - this service stores and returns deals")
+@Path("v1/deals")
+@Api(value="v1/deals", description="Deal API - this service stores and returns deals")
 public class DealService
 {
+
   @GET
   @Consumes("application/json")
   @ApiOperation(value="returns all deals when no dealId is provided , else corressponding deal for id provided")
-  public Response getDeal(@QueryParam("dealId") String dealId) {
+  public Response getDeal(@QueryParam("id") String id) {
       try {
       InputStream stream = this.getClass().getResourceAsStream("/deals.json");
       StringWriter writer = new StringWriter();
       IOUtils.copy(stream, writer, "UTF-8");
+      JSONObject dealsJson = new JSONObject(writer.toString());      
       
-      JSONObject deals = new JSONObject(writer.toString());
       
-      String dealData = dealId != null ? deals.get(dealId).toString() : deals.toString();
-      
-      return Response.ok(dealData, MediaType.APPLICATION_JSON_TYPE).build();
+      return Response.ok(dealsJson.toString(), MediaType.APPLICATION_JSON_TYPE).build();
     } catch (IOException ex) {
       return Response.status(500).build();      
     }
