@@ -36,9 +36,9 @@ import javax.ws.rs.core.Response;
 public class EMailService
 {
 
-   private static final String SMTP_USER = "RAM66321@GMAIL.COM";
+   private static final String SMTP_USER = "<your_gmail>";
 
-   private static final String SMTP_USER_PASS = "didn exzn qlsx hhxs";
+   private static final String SMTP_USER_PASS = "<gmail_app_password>";
 
   @POST
   @Consumes("application/json")
@@ -49,7 +49,7 @@ public class EMailService
 	      String to = email.getRecipient();
 
 	      // Sender's email ID needs to be mentioned
-	      String from = email. getSender();
+	      String from = email.getSender();
 	      final String username = SMTP_USER;
 	      final String password = SMTP_USER_PASS;
 
