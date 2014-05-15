@@ -28,7 +28,7 @@ public class Application extends ResourceConfig implements ServletContextListene
    // e.g. jeffb531-blabber
    // You will be using this name to register your service on the Intuit Service Portal
    // And your url for your service will be: https://jeffb531-blabber-service.codenvy.ctof.intuit.com
-   public final static String SERVICE_ID = "jeffb531";
+   public final static String SERVICE_ID = "";
    // APP_ID = Private Auth appid - get from your on boarding exercise from the service portal
    public final static String APP_ID = "";   
    // APP_SECRET = Private Auth secret - get from your on boarding exercise from the service portal
